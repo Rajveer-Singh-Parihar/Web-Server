@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A BOOK</title>
+    <style>
+          :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #f4f4f4;
+            --text-color: #333;
+            --border-radius: 8px;
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: var(--border-radius);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        form input, form textarea, form select, form button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: var(--border-radius);
+            outline: none;
+            transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+        }
+
+        form input:focus, form textarea:focus, form select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 5px var(--primary-color);
+        }
+        form button {
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        form button:hover {
+            background-color: darkgreen;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Dynamic Website</h1>
+    </header>
+    <img src="https://th.bing.com/th?q=Piston+Cylinder+Thermodynamics&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.4&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="">
+    <h2>THINKING MACHINES</h2>
+    <a href=""></a>
+    <a href='chapter1.html'>Thermodynamics</a><br>
+    <a href="chapter2.html">Magnetism</a>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+</body>
+</html>
